@@ -11,7 +11,7 @@ namespace BookShelf
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.White;
-            string[] books = new string[0];
+            string[] books = new string[4] { "Дорохедоро","No game, no life", "Твоя апрельская ложь", "Клинок, рассекающий демонов"};
             Console.WriteLine("Добро пожаловать в обитель хикки-задрота \nТы можешь: \nДобавить книгу - клацни 1\nПосмотреть книги - клацни 2");
             while (true)
             {
