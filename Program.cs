@@ -34,17 +34,9 @@ namespace BookShelf
         }
         static string[] Add(string[] array, string newValue)
         {
-            
-            int newLength = array.Length + 1;
-
-            string[] result = new string[newLength];
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                result[i] = array[i];
-            }
-            result[newLength - 1] = newValue;
-            return result;
+            Array.Resize(ref array, array.Length + 1);
+            array[array.Length - 1] = newValue;
+            return array;
         }
        
         static void Show(string[] array)
